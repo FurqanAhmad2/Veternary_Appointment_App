@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    android:animateLayoutChanges="true"
+    tools:context=".AddDoctor">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="349dp"
+        android:layout_height="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/docback1" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+
+        android:background="@drawable/edittext_background"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#333333"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/name_input"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/edittext_background"
+        android:hint="Age"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/pNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/age"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Phone Number"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/pNumber"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Degree"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+    <EditText
+        android:id="@+id/fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/degree"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Fee"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fee"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="SaveIntoDB"
+        android:text="Sign UP"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
